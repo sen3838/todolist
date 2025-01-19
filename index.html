@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div><img src="img/tape3.png" alt="" /></div>
+      <h2>To Do <span>List</span></h2>
+      <section>
+        <label>오늘 할일</label>
+        <input id="user" />
+        <button id="add">+</button>
+      </section>
+
+      <section>
+        <ul class="tabs">
+          <li id="all" class="on">All</li>
+          <li id="going">진행중</li>
+          <li id="done">종료</li>
+        </ul>
+        <div id="taskBoard">
+          <!-- <div class="task">
+            <div>할일</div>
+            <div>
+              <button>check</button>
+              <button>delete</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </div>
+
+    <script src="js/custom.js"></script>
+  </body>
+</html>
+<!-- 
+1.사용자가 값을 입력함
+2.+버튼을 클릭하면 할일이 추가됨
+3.check버튼을 누르면 밑줄이 생긴다.
+
+check버튼을 누르면 할일이 끝나면서 밑줄이 샌긴다.
+1.check버튼을 클릭하면 true,false가 나와야한다.
+2.true면 끝난것으로 간주하고 밑줄이 보인다.
+3.flase면 끝나지않은것으로 간주하고 그대로(밑줄X)
+-->

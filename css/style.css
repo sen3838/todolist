@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Ownglyph_wiseelist-Rg";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2501-1@1.1/Ownglyph_wiseelist-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Freesentation-6SemiBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-6SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  color: #333;
+  height: 100vh;
+  background-color: #eee;
+}
+#container {
+  width: 400px;
+  height: calc(100vh - 100px);
+  margin: 50px auto;
+  background-color: #fff;
+  background-size: 10px 10px;
+  background-image: linear-gradient(to right, #eee 1px, transparent 1px),
+    linear-gradient(to bottom, #eee 1px, transparent 1px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+}
+
+h2 {
+  text-align: center;
+  line-height: 70px;
+  font-size: 30px;
+  font-family: "Ownglyph_wiseelist-Rg";
+  color: #555;
+  letter-spacing: 3px;
+}
+
+#container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  z-index: 5;
+  position: absolute;
+  top: -6%;
+  left: 40%;
+  transform: rotateX(40deg);
+}
+section {
+  text-align: center;
+  font-family: "Freesentation-6SemiBold";
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  border-radius: 7px;
+  border: 1px solid #aaa;
+}
+
+#user {
+  padding: 3px;
+}
+
+#add {
+  width: 25px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: 1px solid #aaa;
+  color: #555;
+}
+
+/* 탭 */
+.tabs {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 20px -20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs li {
+  width: 80px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.tabs li.on {
+  color: cornflowerblue;
+  font-weight: bold;
+}
+
+/* 내용 */
+#taskBoard .task {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+#taskBoard button {
+  width: 50px;
+  padding: 3px;
+  color: #555;
+  font-family: "Freesentation-6SemiBold";
+  text-align: center;
+  font-size: 15px;
+  margin-left: 5px;
+  border-radius: 8px;
+  background-color: cornflowerblue;
+  border: none;
+  color: #fff;
+}
+
+.task-done {
+  text-decoration: line-through;
+}
